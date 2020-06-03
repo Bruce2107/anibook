@@ -3,6 +3,27 @@
   "version": "1.0.0",
   "main": "index.js",
   "types": "index.d.ts",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "library",
+    "anibook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bruce2107/anibook"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Eduardo Henrique",
+    "email": "edu.ed322@gmail.com",
+    "url": "https://github.com/Bruce2107"
+  },
+  "bugs": {
+    "email": "edu.ed322@gmail.com",
+    "url": "https://github.com/Bruce2107/anibook/issues"
+  },
+  "homepage": "https://github.com/Bruce2107/anibook#readme",
   "dependencies": {
     "@types/node": "*"
   }
