@@ -24,3 +24,6 @@ Toda a tipagem do projeto está [neste arquivo](https://github.com/Bruce2107/ani
 #### _Dúvidas_
 
 Para qualquer dúvida entre em contato via [Twitter](https://twitter.com/Bruce2107).
+
+# License
+[MIT](https://github.com/Bruce2107/anibook/blob/master/LICENSE)
