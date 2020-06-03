@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 function isAnime(object) {
   return 'whereWatch' in object;
 }
@@ -15,7 +17,7 @@ function createImageObject(folder, file) {
   return {
     contentType: file.mimetype,
     folder,
-    image: Buffer.from(readFileSync(file.path).toString('base64'), 'base64'),
+    image: Buffer.from(fs.readFileSync(file.path).toString('base64'), 'base64'),
     name: file.originalname,
   };
 }
