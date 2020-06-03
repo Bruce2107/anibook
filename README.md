@@ -1,6 +1,6 @@
 # Anibook
 
-### Biblioteca contendo, principalmente, a tipagem necessária para os projetos: [Anibook Frontend](https://github.com/Bruce2107/anibook-frontend) e [Anibook Backend](https://github.com/Bruce2107/anibook-backend).
+Biblioteca contendo, principalmente, a tipagem necessária para o projeto: Anibook
 
 ### Instalação:
 

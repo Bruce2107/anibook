@@ -72,11 +72,11 @@ describe('Search In Array', () => {
       array.push({ language: 'pt', name: 'quatro', url: 'url4' });
   });
   it('should return false', () => {
-      const result = SearchObjectInArray_1.default('url', array);
+      const result = anibook.searchObjectInArray('url', array);
       expect(result).toBeFalsy();
   });
   it('should return true', () => {
-      const result = SearchObjectInArray_1.default('url3', array);
+      const result = anibook.searchObjectInArray('url3', array);
       expect(result).toBeTruthy();
   });
 });
