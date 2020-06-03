@@ -9,6 +9,9 @@
     "library",
     "anibook"
   ],
+  "scripts": {
+    "test": "jest --collectCoverage"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Bruce2107/anibook"
@@ -25,6 +28,10 @@
   },
   "homepage": "https://github.com/Bruce2107/anibook#readme",
   "dependencies": {
-    "@types/node": "*"
+    "@types/jest": "^25.2.3",
+    "@types/multer": "^1.4.3",
+    "@types/node": "*",
+    "jest": "26.0.1",
+    "multer": "^1.4.2"
   }
 }

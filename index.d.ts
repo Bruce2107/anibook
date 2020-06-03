@@ -137,15 +137,31 @@ declare module 'anibook' {
     dados: T;
   };
 
+  // Functions
+
   /**
    * @param object
    * @returns true if `object` are an `Anime`
    */
-  export function isAnime(object: any): object is Anime
+  export function isAnime(object: any): object is Anime;
 
   /**
    * @param object
    * @returns true if `object` are an `Manga`
    */
-  export function isManga(object: any): object is Manga
+  export function isManga(object: any): object is Manga;
+
+  /**
+   *
+   * @param url URL that should be found
+   * @param array Array of `Link`
+   */
+  export function searchObjectInArray(url: string, array: Array<Link>): boolean;
+
+  export function createImageObject(
+    folder: string,
+    file: Express.Multer.File
+  ): TypeImage;
+
+  
 }
