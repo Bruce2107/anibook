@@ -158,10 +158,36 @@ declare module 'anibook' {
    */
   export function searchObjectInArray(url: string, array: Array<Link>): boolean;
 
+  /**
+   *
+   * @param folder Folder name
+   * @param file File object
+   */
   export function createImageObject(
     folder: string,
     file: Express.Multer.File
   ): TypeImage;
 
-  
+  /**
+   *
+   * @param limit The max value of limits sum
+   */
+  export function limits(
+    limit: number
+  ): { limitAnime: number; limitManga: number };
+
+  /**
+   *
+   * @param array Array that will be shuffled
+   * @param i0 Start position, 0 for default
+   * @param i1 Stop position, array size for default
+   */
+  export function shuffleArray<T>(array: T[], i0: number, i1: number): T[];
+
+  /**
+   * 
+   * @param array Initial array 
+   * @param arrays Other arrays
+   */
+  export function mergeArray<T>(array: T[], ...arrays: Array<Array<T>>): T[];
 }

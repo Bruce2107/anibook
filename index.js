@@ -1,30 +1,17 @@
-const fs = require('fs')
-
-function isAnime(object) {
-  return 'whereWatch' in object;
-}
-
-function isManga(object) {
-  return 'whereRead' in object;
-}
-
-function searchObjectInArray(url, array) {
-  for (let i in array) if (array[i].url === url) return true;
-  return false;
-}
-
-function createImageObject(folder, file) {
-  return {
-    contentType: file.mimetype,
-    folder,
-    image: Buffer.from(fs.readFileSync(file.path).toString('base64'), 'base64'),
-    name: file.originalname,
-  };
-}
+const createImageObject = require('./lib/createImageObject');
+const isAnime = require('./lib/isAnime');
+const isManga = require('./lib/isManga');
+const limits = require('./lib/limits');
+const mergeArray = require('./lib/mergeArray');
+const searchObjectInArray = require('./lib/searchObjectInArray');
+const shuffleArray = require('./lib/shuffleArray');
 
 module.exports = {
+  createImageObject,
   isAnime,
   isManga,
+  limits,
+  mergeArray,
   searchObjectInArray,
-  createImageObject
+  shuffleArray,
 };
