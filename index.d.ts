@@ -160,12 +160,16 @@ declare module 'anibook' {
 
   /**
    *
+   * @param contentType ContentType
    * @param folder Folder name
-   * @param file File object
+   * @param name Image name with extension
+   * @param path Image path
    */
   export function createImageObject(
+    contentType: string,
     folder: string,
-    file: Express.Multer.File
+    name: string,
+    path: string
   ): TypeImage;
 
   /**
@@ -185,8 +189,8 @@ declare module 'anibook' {
   export function shuffleArray<T>(array: T[], i0: number, i1: number): T[];
 
   /**
-   * 
-   * @param array Initial array 
+   *
+   * @param array Initial array
    * @param arrays Other arrays
    */
   export function mergeArray<T>(array: T[], ...arrays: Array<Array<T>>): T[];
