@@ -140,30 +140,30 @@ declare module 'anibook' {
   // Functions
 
   /**
-   * @param object
+   * @param Object object The object to be validated
    * @returns true if `object` are an `Anime`
    */
   export function isAnime(object: any): object is Anime;
 
   /**
-   * @param object
+   * @param Object object The object to be validated
    * @returns true if `object` are an `Manga`
    */
   export function isManga(object: any): object is Manga;
 
   /**
    *
-   * @param url URL that should be found
-   * @param array Array of `Link`
+   * @param string url URL that should be found
+   * @param Array array Array of `Link`
    */
   export function searchObjectInArray(url: string, array: Array<Link>): boolean;
 
   /**
    *
-   * @param contentType ContentType
-   * @param folder Folder name
-   * @param name Image name with extension
-   * @param path Image path
+   * @param string contentType ContentType
+   * @param string folder Folder name
+   * @param string name Image name with extension
+   * @param string path Image path
    */
   export function createImageObject(
     contentType: string,
@@ -174,7 +174,7 @@ declare module 'anibook' {
 
   /**
    *
-   * @param limit The max value of limits sum
+   * @param number limit The max value of limits sum
    */
   export function limits(
     limit: number
@@ -182,16 +182,16 @@ declare module 'anibook' {
 
   /**
    *
-   * @param array Array that will be shuffled
-   * @param i0 Start position, 0 for default
-   * @param i1 Stop position, array size for default
+   * @param Array array Array that will be shuffled
+   * @param number i0 Start position, 0 for default
+   * @param number i1 Stop position, array size for default
    */
   export function shuffleArray<T>(array: T[], i0: number, i1: number): T[];
 
   /**
    *
-   * @param array Initial array
-   * @param arrays Other arrays
+   * @param Array array Initial array
+   * @param Matrix arrays Other arrays
    */
   export function mergeArray<T>(array: T[], ...arrays: Array<Array<T>>): T[];
 }
