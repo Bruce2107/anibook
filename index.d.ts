@@ -56,7 +56,7 @@ declare module 'anibook' {
    */
   export interface Anime extends Data {
     info: AnimeInfo;
-    whereWatch?: Array<Link>;
+    whereWatch: Array<Link>;
     musics?: Array<Link>;
   }
 
@@ -77,7 +77,7 @@ declare module 'anibook' {
    */
   export interface Manga extends Data {
     info: MangaInfo;
-    whereRead?: Array<Link>;
+    whereRead: Array<Link>;
   }
 
   // Card
