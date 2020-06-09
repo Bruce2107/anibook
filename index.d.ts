@@ -12,10 +12,10 @@ declare module 'anibook' {
    * @property synopsis
    */
   export interface Data {
-    folder: string;
+    folder?: string;
     name: string;
     photo: string;
-    images: Array<string>;
+    images?: Array<string>;
     synopsis: string;
     comment: string;
   }
@@ -56,8 +56,8 @@ declare module 'anibook' {
    */
   export interface Anime extends Data {
     info: AnimeInfo;
-    whereWatch: Array<Link>;
-    musics: Array<Link>;
+    whereWatch?: Array<Link>;
+    musics?: Array<Link>;
   }
 
   // Manga
@@ -77,7 +77,7 @@ declare module 'anibook' {
    */
   export interface Manga extends Data {
     info: MangaInfo;
-    whereRead: Array<Link>;
+    whereRead?: Array<Link>;
   }
 
   // Card
