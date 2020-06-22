@@ -1,5 +1,5 @@
 //https://www.npmjs.com/package/d3-array
-function shuffle(array, i0 = 0, i1 = array.length) {
+export default function shuffle<T>(array: T[], i0 = 0, i1 = array.length) {
   let m = i1 - (i0 = +i0),
     t,
     i;
@@ -13,5 +13,3 @@ function shuffle(array, i0 = 0, i1 = array.length) {
 
   return array;
 }
-
-module.exports = shuffle;

@@ -1,11 +1,9 @@
-const shuffle = require('./shuffleArray');
+import shuffle from './shuffle';
 
-function mergeArray(array, ...arrays) {
+export default function mergeArray<T>(array: T[], ...arrays: [T[]]) {
   if (!arrays) {
     return array;
   }
   array = arrays.reduce((a, x) => a.concat(x), array);
   return shuffle(array);
 }
-
-module.exports = mergeArray;
