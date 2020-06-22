@@ -1,16 +1,12 @@
 import { readFileSync } from 'fs';
+import { TypeImage } from './types';
 
 export default function createImageObject(
   contentType: string,
   folder: string,
   name: string,
   path: string
-): {
-  folder: string;
-  name: string;
-  contentType: string;
-  image: Buffer;
-} {
+): TypeImage {
   return {
     contentType,
     folder,

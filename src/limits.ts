@@ -1,4 +1,4 @@
-function limits(limit) {
+export default function limits(limit: number) {
   let limitAnime = 0,
     limitManga = 0;
   if (limit < 0 || !limit) limitAnime = 1;
@@ -12,5 +12,3 @@ function limits(limit) {
     limitManga,
   };
 }
-
-module.exports = limits;
