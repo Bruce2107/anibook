@@ -3,3 +3,4 @@ tsconfig.json
 .eslint.js
 .prettierrc
 jest.config.js
+lib/types.js
