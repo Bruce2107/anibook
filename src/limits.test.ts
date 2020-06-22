@@ -18,4 +18,10 @@ describe('limits', () => {
     expect(result.limitAnime).toBe(4);
     expect(result.limitManga).toBe(3);
   });
+  it('should return 1 to anime when limit is undefined', () => {
+    const result = limits();
+
+    expect(result.limitAnime).toBe(1);
+    expect(result.limitManga).toBe(0);
+  });
 });
