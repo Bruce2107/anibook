@@ -177,7 +177,7 @@ declare module 'anibook' {
    * @param number limit The max value of limits sum
    */
   export function limits(
-    limit: number
+    limit?: number
   ): { limitAnime: number; limitManga: number };
 
   /**
