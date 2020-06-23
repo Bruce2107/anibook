@@ -17,7 +17,7 @@ import {
   searchObjectInArray,
   createImageObject,
   limits,
-  mergerArray
+  mergeArray
 } from 'anibook';
 ```
 
