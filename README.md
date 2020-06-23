@@ -16,6 +16,8 @@ import {
   isManga,
   searchObjectInArray,
   createImageObject,
+  limits,
+  mergerArray
 } from 'anibook';
 ```
 
