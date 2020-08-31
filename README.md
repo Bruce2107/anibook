@@ -2,10 +2,10 @@
 
 Biblioteca contendo, principalmente, a tipagem necessária para o projeto: Anibook
 
-### Instalação:
+## Instalação
 
 ```sh
-$ npm i anibook
+yarn add anibook
 ```
 
 ### Como usar
@@ -17,24 +17,24 @@ import {
   searchObjectInArray,
   createImageObject,
   limits,
-  mergeArray
+  mergeArray,
 } from 'anibook';
 ```
 
 ### **Testes**
 
 ```sh
-$ yarn test
+yarn test
 ```
 
 ## **Tipagem**
 
 Toda a tipagem do projeto está [neste arquivo](https://github.com/Bruce2107/anibook/blob/master/index.d.ts).
 
-#### _Dúvidas_
+### _Dúvidas_
 
 Para qualquer dúvida entre em contato via [Twitter](https://twitter.com/Bruce2107).
 
-# License
+## License
 
 [MIT](https://github.com/Bruce2107/anibook/blob/master/LICENSE)
