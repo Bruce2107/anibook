@@ -1,7 +1,7 @@
 /// <reference types="node" />
 
 declare module 'anibook' {
-  // Gerenal
+  // General
 
   /**
    * @property comment
@@ -63,7 +63,7 @@ declare module 'anibook' {
   // Manga
 
   /**
-   * @property numberChapeters
+   * @property numberChapters
    * @property numberVolumes
    */
   export interface MangaInfo extends Info {
@@ -115,7 +115,7 @@ declare module 'anibook' {
     email: string;
   }
 
-  // Utilits
+  // Utils
 
   /**
    * @template T `Anime` | `Manga` | `Card`
