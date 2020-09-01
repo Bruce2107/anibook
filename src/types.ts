@@ -58,7 +58,7 @@ export interface Anime extends Data {
 // Manga
 
 /**
- * @property numberChapeters
+ * @property numberChapters
  * @property numberVolumes
  */
 export interface MangaInfo extends Info {
@@ -110,7 +110,7 @@ export interface User {
   email: string;
 }
 
-// Utilits
+// Utils
 
 /**
  * @template T `Anime` | `Manga` | `Card`
