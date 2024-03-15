@@ -1,5 +1,5 @@
 {
-  "name": "@bruce2107/anibook",
+  "name": "anibook",
   "version": "1.4.1",
   "main": "./lib/index.js",
   "types": "./index.d.ts",
