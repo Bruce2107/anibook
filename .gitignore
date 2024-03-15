@@ -2,3 +2,4 @@ node_modules/
 yarn.lock
 coverage/
 lib/
+package-lock.json
