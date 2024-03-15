@@ -10,7 +10,7 @@ export default function createImageObject(
   return {
     contentType,
     folder,
-    image: Buffer.from(readFileSync(path).toString('base64'), 'base64'),
     name,
+    image: readFileSync(path),
   };
 }

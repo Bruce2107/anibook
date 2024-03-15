@@ -1,11 +1,13 @@
-export default function limits(limit?: number) {
-  let limitAnime = 0,
+export default function limits(limit: number = 0) {
+  let limitAnime: number, limitManga: number;
+  if (limit === 0 || limit === null) {
+    limitAnime = 1;
     limitManga = 0;
-  if (!limit || limit < 0) limitAnime = 1;
-  else if (limit % 2 === 0) limitAnime = limitManga = limit / 2;
-  else {
-    limitAnime = (limit + 1) / 2;
-    limitManga = limitAnime - 1;
+  } else if (limit % 2 === 0) {
+    limitAnime = limitManga = limit / 2;
+  } else {
+    limitManga = Math.floor(limit / 2);
+    limitAnime = limitManga + 1;
   }
   return {
     limitAnime,
